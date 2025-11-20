@@ -5,7 +5,7 @@ export default function SummaryCard({ icon, value, label }) {
     <Card sx={{ flex: 1, minWidth: 200, backgroundColor: "white" }}>
       <CardContent>
         <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
-          <Box sx={{ fontSize: 40, color: "primary.main" }}>{icon}</Box>
+          <Box sx={{ fontSize: 40 }}>{icon}</Box>
           <Box>
             <Typography variant="h4" component="div">
               {value}
