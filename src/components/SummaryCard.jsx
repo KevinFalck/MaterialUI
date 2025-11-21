@@ -7,7 +7,7 @@ export default function SummaryCard({ icon, value, label }) {
         <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
           <Box sx={{ fontSize: 40 }}>{icon}</Box>
           <Box>
-            <Typography variant="h4" component="div">
+            <Typography variant="h3" sx={{ fontSize: 20, fontWeight: "bold" }}>
               {value}
             </Typography>
             <Typography variant="body2">{label}</Typography>

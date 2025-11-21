@@ -20,10 +20,13 @@ const orders = [
 export default function OrdersTable() {
   return (
     <Box sx={{ marginTop: 3 }}>
-      <Typography variant="h6" sx={{ marginBottom: 2 }}>
-        Dernières commandes
-      </Typography>
       <TableContainer component={Paper}>
+        <Typography
+          variant="h2"
+          sx={{ margin: 2, fontWeight: "bold", fontSize: 20 }}
+        >
+          Dernières commandes
+        </Typography>
         <Table>
           <TableHead>
             <TableRow>

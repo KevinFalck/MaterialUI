@@ -1,23 +1,25 @@
-import { AppBar, Toolbar, Typography, IconButton } from "@mui/material";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import { AppBar, Toolbar, Typography, Avatar } from "@mui/material";
+import PersonIcon from "@mui/icons-material/Person";
+
+const drawerWidth = 90;
 
 export default function Header() {
   return (
     <AppBar
       position="fixed"
       sx={{
+        width: `calc(100% - ${drawerWidth}px)`,
+        ml: `${drawerWidth}px`,
         backgroundColor: "primary.main",
-        marginLeft: "64px",
-        width: "calc(100% - 100px)",
       }}
     >
       <Toolbar>
-        <Typography variant="h6" sx={{ flexGrow: 1 }}>
+        <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
           Tableau de bord
         </Typography>
-        <IconButton color="inherit">
-          <AccountCircleIcon />
-        </IconButton>
+        <Avatar>
+          <PersonIcon />
+        </Avatar>
       </Toolbar>
     </AppBar>
   );
