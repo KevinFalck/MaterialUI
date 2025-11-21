@@ -16,8 +16,6 @@ export default function Sidebar() {
         width: drawerWidth,
         "& .MuiDrawer-paper": {
           width: drawerWidth,
-          backgroundColor: "white",
-          top: 0,
           height: "100vh",
           borderRight: "1px solid rgba(0, 0, 0, 0.12)",
         },
