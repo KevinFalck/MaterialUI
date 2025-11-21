@@ -7,20 +7,15 @@ export default function Header() {
       position="fixed"
       sx={{
         backgroundColor: "primary.main",
-        zIndex: 1300,
         marginLeft: "64px",
-        width: "calc(100% - 64px)",
+        width: "calc(100% - 100px)",
       }}
     >
       <Toolbar>
-        <Typography
-          variant="h6"
-          component="div"
-          sx={{ flexGrow: 1, color: "white" }}
-        >
+        <Typography variant="h6" sx={{ flexGrow: 1 }}>
           Tableau de bord
         </Typography>
-        <IconButton color="inherit" sx={{ color: "white" }}>
+        <IconButton color="inherit">
           <AccountCircleIcon />
         </IconButton>
       </Toolbar>

@@ -23,7 +23,7 @@ export default function OrdersTable() {
       <Typography variant="h6" sx={{ marginBottom: 2 }}>
         Dernières commandes
       </Typography>
-      <TableContainer component={Paper} sx={{ backgroundColor: "white" }}>
+      <TableContainer component={Paper}>
         <Table>
           <TableHead>
             <TableRow>

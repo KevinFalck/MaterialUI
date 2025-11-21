@@ -5,17 +5,10 @@ import DashboardContent from "./components/DashboardContent";
 
 function App() {
   return (
-    <Box sx={{ display: "flex", minHeight: "100vh", backgroundColor: "white" }}>
+    <Box sx={{ display: "flex", minHeight: "100vh" }}>
       <Header />
       <Sidebar />
-      <Box
-        component="main"
-        sx={{
-          flexGrow: 1,
-          marginLeft: "64px",
-          marginTop: "64px",
-        }}
-      >
+      <Box sx={{ flexGrow: 1, marginLeft: "64px", marginTop: "64px" }}>
         <DashboardContent />
       </Box>
     </Box>

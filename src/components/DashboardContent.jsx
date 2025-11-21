@@ -11,15 +11,7 @@ export default function DashboardContent() {
   const yData = [2, 5.5, 2, 4, 8.5, 6, 3, 1.5, 3, 5];
 
   return (
-    <Box
-      sx={{
-        flex: 1,
-        padding: 3,
-        minHeight: "calc(100vh - 64px)",
-        width: "100%",
-      }}
-    >
-      {/* Cartes de résumé */}
+    <Box sx={{ flex: 1, padding: 3, minHeight: "calc(100vh - 64px)" }}>
       <Box sx={{ display: "flex", gap: 2, marginBottom: 3 }}>
         <SummaryCard
           icon={<AttachMoneyIcon sx={{ fontSize: 40 }} />}
@@ -38,37 +30,26 @@ export default function DashboardContent() {
         />
       </Box>
 
-      {/* Graphique */}
-      <Paper
-        sx={{
-          padding: 2,
-          marginBottom: 3,
-          backgroundColor: "white",
-          width: "fit-content",
-        }}
-      >
+      <Paper sx={{ padding: 2, marginBottom: 3, width: "fit-content" }}>
         <Typography variant="h6" sx={{ marginBottom: 2 }}>
           Graphique (avec @mui/x-charts)
         </Typography>
-        <Box sx={{ width: "100%", height: 400 }}>
-          <LineChart
-            width={600}
-            height={400}
-            xAxis={[{ data: xData, scaleType: "linear", min: 1, max: 10 }]}
-            series={[
-              {
-                data: yData,
-                color: "#26a69a",
-                curve: "natural",
-                showMark: true,
-              },
-            ]}
-            yAxis={[{ min: 0, max: 10 }]}
-          />
-        </Box>
+        <LineChart
+          width={600}
+          height={400}
+          xAxis={[{ data: xData, scaleType: "linear", min: 1, max: 10 }]}
+          series={[
+            {
+              data: yData,
+              color: "#26a69a",
+              curve: "natural",
+              showMark: true,
+            },
+          ]}
+          yAxis={[{ min: 0, max: 10 }]}
+        />
       </Paper>
 
-      {/* Tableau */}
       <OrdersTable />
     </Box>
   );

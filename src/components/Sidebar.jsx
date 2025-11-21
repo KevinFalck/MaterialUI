@@ -6,7 +6,7 @@ import GroupIcon from "@mui/icons-material/Group";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import SettingsIcon from "@mui/icons-material/Settings";
 
-const drawerWidth = 64;
+const drawerWidth = 100;
 
 export default function Sidebar() {
   return (
@@ -14,11 +14,8 @@ export default function Sidebar() {
       variant="permanent"
       sx={{
         width: drawerWidth,
-        flexShrink: 0,
-        zIndex: 1200,
         "& .MuiDrawer-paper": {
           width: drawerWidth,
-          boxSizing: "border-box",
           backgroundColor: "white",
           top: 0,
           height: "100vh",
